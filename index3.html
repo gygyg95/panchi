@@ -101,9 +101,10 @@ canvas.height = window.innerHeight * 0.8;
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(currentCharacterImage, x, y, 110, 270);
+    
     ctx.drawImage(currentTreeImage, treeX, treeY + treeMoveDistance, 120, 300);
-
+ctx.drawImage(currentCharacterImage, x, y, 110, 270);
+    
     if (!isTypingMessage) {
         if (x > (treeX - 20) && x < (treeX + 60)) {
             if (!dialogueShown) {
