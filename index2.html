@@ -123,9 +123,10 @@ function dropTree(callback) {
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(currentCharacterImage, x, y, 120, 310);
+    
     ctx.drawImage(currentTreeImage, treeX + treeMoveDistance, treeY, 150, 350);
-
+ctx.drawImage(currentCharacterImage, x, y, 120, 310);
+    
     // 角色靠近樹就觸發對話
     if (x > (treeX + treeMoveDistance - 80) && x < (treeX + treeMoveDistance + 160)) { 
     if (!dialogueShown && !storyLocked) { // ✨ 加一個storyLocked判斷！
