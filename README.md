@@ -1,1 +1,1 @@
-# panchi
+# cnn-walk-game
