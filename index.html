@@ -114,9 +114,9 @@ canvas.height = window.innerHeight * 0.8;
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(currentCharacterImage, x, y, 145, 360);
+    
     ctx.drawImage(currentTreeImage, treeX + treeMoveDistance, 250, 150, 360); // 大下 小上 男生位置高度
-
+ctx.drawImage(currentCharacterImage, x, y, 145, 360);
 
 
     // 角色靠近樹就觸發對話 數字大靈敏高
